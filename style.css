@@ -1,0 +1,359 @@
+/**** reset ****/
+
+:root {
+    --main-font: sans-serif;
+    --font-size: 16px;
+    --main-color: #42134e;
+    --second-color: #40f7ee;
+    --main-modal-color: #c7ee18;
+    --second-modal-color: #000000;
+    --container-width: 1200px;
+}
+
+html {
+ 
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+
+
+.header {
+    background-image: linear-gradient(whitesmoke, transparent);
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 15px;
+    z-index: 950;
+    margin-bottom: 5px;
+}
+
+.header .logo {
+    margin-left: 5%;
+}
+
+
+
+/**** menu aside ***/
+
+
+.nav {
+    width: 30%;
+    transform: translateX(-100%);
+    transition: all .3s ease;
+    z-index: 999;
+    margin-left: -5px;
+    
+}
+
+.nav__link {
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+    
+}
+
+.nav__link--inside:hover {
+    color:coral;
+
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: white;
+    
+}
+
+.list__item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.list__item--click {
+    cursor: pointer;
+    
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.list__arrow {
+    margin-left: auto;
+    
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    list-style: none;
+    height: 0;
+}
+
+ /*clase agregada en js*/
+.desplegar {
+    transform: translateX(1%);
+}
+
+.open__menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.open__menu:hover {
+    transform: scale(1.1);
+}
+
+/** primer parte ( nav + titulo) **/
+
+.primer_part {
+    display: flex;
+    height: 500px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.primer_part .titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    align-items: center;
+}
+.primer_part .titulo h1{
+    letter-spacing: 50px;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 100px;
+}
+.primer_part .titulo p {
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+
+
+/* section 1 */
+
+#imgMen {
+    width: 100%; 
+}
+#imgWoman {
+    width: 100%; 
+}
+
+.seccion__1{
+   
+    background: white;
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+  
+}
+
+/** mujer **/
+
+.seccion__1 .seccion__mujer .seccion__mujer-box {
+    background: orange;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px;
+}
+
+.seccion__1 .seccion__mujer .seccion__mujer-box h3 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: lightslategray;
+    margin-bottom: 5%;
+}
+
+.seccion__1 .seccion__mujer .seccion__mujer-box button {
+    width: 60%;
+    background-color: lightsteelblue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.seccion__1 .seccion__mujer .seccion__mujer-box button:hover {
+    background-color: rgb(95, 148, 218);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/** Hombre **/
+.seccion__1 .seccion__hombre .seccion__hombre-box {
+    background:lightslategray;
+    padding: 25px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.seccion__1 .seccion__hombre .seccion__hombre-box h3 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: orange;
+    margin-bottom: 5%;
+}
+
+.seccion__1 .seccion__hombre .seccion__hombre-box button {
+    width: 60%;
+    background-color: rgb(95, 148, 218);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.seccion__1 .seccion__hombre .seccion__hombre-box button:hover {
+    background-color: lightsteelblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/**footer**/
+.footer{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+    width: 100%;
+    padding: 64px 0;
+    bottom: 0; 
+    margin-top: 1%;
+
+
+}
+
+/* medias */
+
+@media screen and (max-width: 950px) {
+
+    .header {
+        font-size: 20px;
+    }
+
+    .primer_part {
+        height: 350px;
+    }
+
+    .primer_part .titulo h1 {
+        font-size: 70px;
+        letter-spacing: 20px;
+        margin-left: -15%;
+    }
+
+    .primer_part .titulo p {
+        font-size: 15px;
+        letter-spacing: 5px;
+        margin-left: -15%;
+    }
+
+    .seccion__1{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+        margin-top: 5px;
+      
+    }
+
+    .nav {
+        width: 40%;
+    }
+
+    #link__men {
+        font-size: 15px;
+    }
+
+    
+}
+
+@media screen and (max-width: 472px) {
+
+    .header {
+        font-size: 15px;
+    }
+
+    .nav {
+        width: 80%;
+    }
+
+    .primer_part {
+        height: 200px;
+    }
+
+    .primer_part .titulo h1 {
+        font-size: 40px;
+        letter-spacing: 15px;
+        margin-left: -40%;
+    }
+
+    .primer_part .titulo p {
+        font-size: 10px;
+        letter-spacing: 5px;
+        margin-left: -30%;
+    }
+
+    .seccion__1{
+        display:flex;
+        flex-direction: column;
+      
+    }
+
+}
