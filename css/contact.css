@@ -1,0 +1,295 @@
+/**** reset ****/
+
+:root {
+    --main-font: sans-serif;
+    --font-size: 16px;
+    --main-color: #42134e;
+    --second-color: #40f7ee;
+    --main-modal-color: #c7ee18;
+    --second-modal-color: #000000;
+    --container-width: 1200px;
+}
+
+html {
+ 
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+
+
+.header {
+    background-image: linear-gradient(whitesmoke, transparent);
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 15px;
+    z-index: 950;
+    margin-bottom: 5px;
+}
+
+.header .logo {
+    margin-left: 5%;
+}
+
+
+
+/**** menu aside ***/
+
+
+.nav {
+    width: 30%;
+    transform: translateX(-100%);
+    transition: all .3s ease;
+    z-index: 999;
+    margin-left: -5px;
+    
+}
+
+.nav__link {
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+    
+}
+
+.nav__link--inside:hover {
+    color:coral;
+
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: white;
+    
+}
+
+.list__item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.list__item--click {
+    cursor: pointer;
+    
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.list__arrow {
+    margin-left: auto;
+    
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    list-style: none;
+    height: 0;
+}
+
+ /*clase agregada en js*/
+.desplegar {
+    transform: translateX(1%);
+}
+
+.open__menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.open__menu:hover {
+    transform: scale(1.1);
+}
+
+/** primer parte ( nav + titulo) **/
+
+.primer_part {
+    display: flex;
+    height: 300px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.primer_part .titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    align-items: center;
+}
+.primer_part .titulo h1{
+    letter-spacing: 20px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 60px;
+    margin-left: 10%;
+}
+
+
+
+
+/** form **/
+
+.contact {
+    background: lightgray;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+}
+
+form .tag {
+    text-align: center;
+    font-size: 30px;
+    color: lightslategray;
+    letter-spacing: 5px;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+form label {
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color: lightslategray;
+}
+
+form input {
+    padding: 1%;
+    border: none;
+    border-radius: 10px;
+}
+
+form textarea {
+    border: none;
+    margin-bottom: 5%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+form button {
+    padding: 1%;
+    border: none;
+    border-radius: 25px;
+    background-color: lightslategray;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+form button:hover {
+    background: lightseagreen;
+    transition: .5s;
+}
+
+
+
+/**footer**/
+.footer{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+    width: 100%;
+    padding: 64px 0;
+    bottom: 0; 
+    margin-top: 1%;
+
+
+}
+
+@media screen and (max-width: 1020px) {
+
+
+    .primer_part {
+        height: 200px;
+    }
+    
+    .primer_part .titulo h1{
+        letter-spacing: 10px;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 40px;
+        margin-left: 10%;
+    }
+    
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .primer_part{
+        height: 150px;
+    }
+
+    .primer_part .titulo h1{
+        letter-spacing: 10px;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .primer_part {
+        height: 100px;
+    }
+
+    .primer_part .titulo h1{
+        letter-spacing: 10px;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: -20%;
+    }
+}

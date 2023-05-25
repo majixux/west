@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="shortcut icon" href="favico.png">
+    
+</head>
+<body>
+        <header class="header">
+              <div class="menu__hamb">
+                <button class="open__menu" id="open__close"><img src="assets/hamb.svg" class="hamb_img"></button>
+              </div>
+              <div class="logo">
+                <h2>WEST</h2>
+              </div>
+        </header>
+        <div class="primer_part">
+              <nav class="nav" id="aside">
+                <ul class="list">
+
+                  <li class="list__item">
+                        <div class="list__button">
+                        <img src="assets/inicio.svg" class="list__img">
+                    <a href="index.html" class="nav__link"> Inicio </a>
+                    </div>
+                  </li>
+
+                  <li class="list__item">
+                    <div class="list__button list__button--click">
+                      <img src="assets/woman.svg" class="list__img">
+                      <a href="woman.html" class="nav__link">Mujer</a>
+                      <img src="assets/flecha.svg" class="list__arrow">
+                    </div>
+
+
+                    <ul class="list__show">
+                      <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                          Abrigos
+                        </a>
+                      </li>
+
+                      <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                          Tops y remeras
+                        </a>
+                      </li>
+
+                      <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                          Accesorios
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="list__item">
+                    <div class="list__button list__button--click">
+                      <img src="assets/men.svg" class="list__img">
+                      <a href="men.html" class="nav__link" id="link__men">Hombre</a>
+                      <img src="assets/flecha.svg" class="list__arrow">
+                    </div>
+
+
+                    <ul class="list__show">
+                      <li class="list__inside">
+                        <a href="#" class="   nav__link nav__link--inside">
+                          Abrigos
+                        </a>
+                      </li>
+
+                      <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                          camisas y remeras
+                        </a>
+                      </li>
+
+                      <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">
+                          Accesorios
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__button">
+                    <img src="assets/contact.svg" class="list__img">
+                <a href="contact.html" class="nav__link"> Contacto </a>
+                </div>
+                  </li>
+
+                  <li class="list__item">
+                    <div class="list__button">
+                    <img src="assets/shop.svg" class="list__img">
+                <a href="carrito.html" class="nav__link"> Carrito </a>
+                </div>
+                  </li>
+                </ul>    
+              </nav>
+            
+              <div class="titulo">
+                <h1>CONTACTO</h1>
+              </div>
+              </div>
+            
+            <!-- section Form con api FormSpree  -->
+
+              <section class="contact">
+                <div class="wrapper">
+                    <div class="contact-content">
+
+                    
+                        <form id="form" class="form"  action="https://formspree.io/f/xbjeeknz" method="post">
+                            <h3 class="tag"><span>Consultanos</span></h3>
+                            <label for="name">Nombre completo<span>*</span></label>
+                            <input name="name" required type="text" id="name" placeholder="Nombre"></input>
+                            <label for="email">Correo electronico<span>*</span></label>
+                            <input name="email" type="email" id="email" required placeholder="email">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn primery full">Enviar</button>
+                        </form>
+
+                    </div>
+                </div>
+              </section>
+    
+  <!-- footer -->
+  <footer class="footer">
+      <div class="piePagina">
+          <p>PAGINA DISEÑADA POR @EstefanoIgn, @anabella & @Majo</p>
+      </div>
+  </footer>
+    
+      <script src="./js/nuevoMain.js" type="module"></script>
+      <script src="./js/contactc.js"></script>
+</body>
+</html>
