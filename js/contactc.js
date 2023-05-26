@@ -1,8 +1,6 @@
 
 
-/* No se muestra alert al enviar el formulario, 
-nos redirecciona a la pagina de FormSpree. El form 
-llega correctamente al email configurado*/
+
 
 const $form = document.querySelector('#form')
 

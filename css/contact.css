@@ -178,7 +178,7 @@ body {
 /** form **/
 
 .contact {
-    background: lightgray;
+    background: lightpink;
 
 }
 
@@ -266,6 +266,7 @@ form button:hover {
 
 @media screen and (max-width: 700px) {
 
+
     .primer_part{
         height: 150px;
     }
@@ -281,6 +282,10 @@ form button:hover {
 
 @media screen and (max-width: 500px) {
 
+    .nav {
+        width: 80%;
+    }
+
     .primer_part {
         height: 100px;
     }
@@ -290,6 +295,6 @@ form button:hover {
         color: whitesmoke;
         font-weight: 700;
         font-size: 20px;
-        margin-left: -20%;
+        margin-left: -100%;
     }
 }

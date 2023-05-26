@@ -312,9 +312,17 @@ body {
 
 @media (max-width: 900px) {
 
+    .nav {
+        width: 40%;
+    }
+
     .primer_part {
         display: flex;
     
+    }
+
+    .primer_part .sub__titulo {
+        margin-left: -50%;
     }
 
     .primer_part .sub__titulo .img1 {
@@ -349,16 +357,19 @@ body {
 }
 
 @media (max-width: 500px) {
+    .nav {
+        width: 80%;
+    }
 
     .primer_part .sub__titulo .img1 {
-        width: 50%;
-       height: 70%;
+
        display: none;
     }
     
     .primer_part .sub__titulo .img2 {
-        width: 100%;
+        width: 140%;
         height: auto;
+        margin-left: -35%;
     }
 
 
